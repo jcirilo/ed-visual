@@ -52,11 +52,11 @@ function App() {
   useEffect(() => render([], ''), [])
 
   return (
-    <div className="bg-gray-100 dark:bg-zinc-900 w-full flex">
-      <div className="bg-white w-full h-auto pb-2 md:min-h-screen md:pb-0 border-r-2 md:w-[480px] dark:bg-zinc-800 dark:border-none ">
+    <div className="bg-gray-100 w-full flex">
+      <div className="bg-white w-full h-auto pb-2 md:min-h-screen md:pb-0 border-r-2 md:w-[480px] ">
         <div className="p-4">
           <div className="flex justify-around items-center">
-            <h1 className="text-2xl font-semibold dark:text-gray-100">
+            <h1 className="text-2xl font-semibold">
               E. D. Visual
             </h1>
             <div className="p-4 rounded-lg bg-gray-100">
@@ -79,8 +79,8 @@ function App() {
                 <option value='LSENC'>
                     L. ENCADEADA
                 </option>
-                <option value='AVB'>
-                    A. BINÁRIA
+                <option value='AVB' disabled className="disabled:cursor-not-allowed">
+                    AVL -indisponível- 
                 </option>
               </select>
             </div>
